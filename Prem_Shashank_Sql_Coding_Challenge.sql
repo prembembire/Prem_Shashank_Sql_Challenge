@@ -209,7 +209,7 @@ Group By Name;
 SELECT c.customer_id, c.name, SUM(o.total_price) AS total_spent
 FROM customers c
 JOIN orders o ON c.customer_id = o.customer_id
-GROUP BY c.customer_id, c.name;
+GROUP BY c.customer_id;
 
 
 --11. Find the Average Order Amount for Each Customer.
