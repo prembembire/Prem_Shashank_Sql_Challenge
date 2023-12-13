@@ -252,8 +252,7 @@ Where Customer_id Not In (Select Customer_Id from Orders);
 
 
 --17. Subquery to Calculate the Percentage of Total Revenue for a Product.
-SELECT product_id,name,price,(price * 100 / (SELECT SUM(total_price) FROM orders)) AS revenue_percentage
-FROM products;
+
 
 
 --18. Subquery to Find Products with Low Stock.
